@@ -31,9 +31,9 @@ git clone --depth=1 https://github.com/jerrykuku/luci-app-vssr.git package/lean/
 git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblockneteasemusic.git package/lean/UnblockMusic
 
 # Add & Replace theme source
-#rm -rf package/lean/luci-theme-argon
-#git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
-#git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git package/lean/luci-app-argon-config
+rm -rf package/lean/luci-theme-argon
+git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
+git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git package/lean/luci-app-argon-config
 
 # Add Linkease & DDNSto source
 #echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
