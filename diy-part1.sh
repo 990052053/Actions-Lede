@@ -20,7 +20,7 @@
 # Add Custom feeds source
 echo 'src-git Lienol https://github.com/Lienol/openwrt-package.git' >>feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+echo 'src-git passwallyl https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git OpenClash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/lean/passwall
