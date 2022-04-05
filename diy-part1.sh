@@ -20,8 +20,10 @@
 # Add Custom feeds source
 echo 'src-git Lienol https://github.com/Lienol/openwrt-package.git' >>feeds.conf.default
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
+echo 'src-git openwrt-passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git OpenClash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
+
+git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/lean/passwall
 
 # Add luci-app-vssr source
 git clone --depth=1 https://github.com/jerrykuku/lua-maxminddb.git package/lean/lua-maxminddb
@@ -34,10 +36,6 @@ git clone --depth=1 https://github.com/UnblockNeteaseMusic/luci-app-unblocknetea
 rm -rf package/lean/luci-theme-argon
 git clone --depth=1 -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/lean/luci-theme-argon
 git clone --depth=1 https://github.com/jerrykuku/luci-app-argon-config.git package/lean/luci-app-argon-config
-
-# Add Linkease & DDNSto source
-#echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
-#echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
 
 # echo 'src-git kenzo https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
 # echo 'src-git small https://github.com/kenzok8/small' >>feeds.conf.default
