@@ -23,10 +23,10 @@ echo 'src-git ssrplus https://github.com/fw876/helloworld' >>feeds.conf.default
 echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 echo 'src-git OpenClash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
 echo 'src-git bypass https://github.com/kiddin9/openwrt-bypass' >>feeds.conf.default
+# echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2' >>feeds.conf.default
 
-# Add passwall passwall2 helloworld
+# Add passwall helloworld
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/lean/passwall
-#git clone https://github.com/xiaorouji/openwrt-passwall2 package/lean/passwall2
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/vssr
 
