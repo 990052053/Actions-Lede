@@ -26,7 +26,7 @@ echo 'src-git bypass https://github.com/kiddin9/openwrt-bypass' >>feeds.conf.def
 
 # Add passwall passwall2 helloworld
 git clone -b luci https://github.com/xiaorouji/openwrt-passwall package/lean/passwall
-git clone https://github.com/xiaorouji/openwrt-passwall2 package/lean/passwall2
+#git clone https://github.com/xiaorouji/openwrt-passwall2 package/lean/passwall2
 git clone https://github.com/jerrykuku/lua-maxminddb.git package/lean/maxminddb
 git clone https://github.com/jerrykuku/luci-app-vssr.git package/lean/vssr
 
